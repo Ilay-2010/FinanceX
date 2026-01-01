@@ -1,4 +1,3 @@
-
 import React, { useRef, useEffect } from 'react';
 
 interface ThreadsProps {
@@ -9,7 +8,6 @@ interface ThreadsProps {
 
 const Threads: React.FC<ThreadsProps> = ({
   amplitude = 1,
-  distance = 0,
   enableMouseInteraction = true
 }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
