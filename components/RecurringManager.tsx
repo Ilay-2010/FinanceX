@@ -1,6 +1,5 @@
-
 import React, { useState } from 'react';
-import { Plus, Trash2, Calendar, Zap, RefreshCw, X, Check } from 'lucide-react';
+import { Plus, Trash2, Calendar, Zap, RefreshCw, Check } from 'lucide-react';
 import { RecurringTransaction, TransactionType, CATEGORIES } from '../types';
 import ScrollReveal from './ScrollReveal';
 
@@ -14,7 +13,7 @@ const RecurringManager: React.FC<RecurringManagerProps> = ({ recurringItems, onA
   const [showAdd, setShowAdd] = useState(false);
   const [desc, setDesc] = useState('');
   const [amount, setAmount] = useState('');
-  const [category, setCategory] = useState(CATEGORIES[0]);
+  const [category] = useState(CATEGORIES[0]);
   const [day, setDay] = useState(1);
   const [type, setType] = useState<TransactionType>(TransactionType.EXPENSE);
 
