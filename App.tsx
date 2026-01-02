@@ -112,7 +112,7 @@ const App: React.FC = () => {
         setData({ transactions: [], budgets: [], recurring: [], hasSeenLanding: false });
         
         // Nuclear restart
-        window.location.replace(window.location.reload);
+        window.location.reload(window.location.reload);
       }, 3000);
     }
   };
